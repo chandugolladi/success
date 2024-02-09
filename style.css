@@ -1,0 +1,130 @@
+/*logo size adjusting */
+#logoimage
+{
+    width:50px;
+}
+
+
+.navbar-custom {
+    background-color:black; /* Change this to the background color you want */
+}
+
+.navbar-custom .navbar-nav .nav-link {
+    color: white; /* Change this to the text color you want */
+    font-size: 18px;
+    font-family: 'Anton', sans-serif; 
+}
+
+.navbar-custom .navbar-toggler-icon {
+    background-color: transparent; /* Set the background color to transparent */
+    border: 1px solid black; /* Add a border for visibility, change color as needed */
+}
+
+
+.navbar-brand {
+    font-family: 'Honk', system-ui;   
+    font-size:35px;
+}
+
+.navbar-nav .nav-item.dropdown:hover .dropdown-menu {
+    display:block ;
+}
+
+.navbar-nav .nav-item.dropdown:hover .dropdown-menu a:active {
+    background-color: black; 
+    color: white; 
+}
+
+
+.jumbotron{
+    background-color: white;
+    width: 100%;
+    height: 90vh;
+    border-radius: 0;
+   
+}
+
+#hero button{
+    width: 140px;
+    font-size: 20px;
+}
+
+#hero h2 {
+    color: black;
+    font-family: 'Anton', sans-serif; 
+}
+
+#hero h1 {
+    color: black;
+    font-family: 'Anton', sans-serif; 
+}
+
+
+
+#hero {
+    background-image: url(egypt.jpg);
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 100px;
+    margin-top: 0px;
+}
+
+
+#changetext:after {
+    content: "";
+    font-size: 50px;
+    font-family: 'Honk', system-ui;
+    animation-name: changetextpr;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes changetextpr {
+    1% {
+        content: "CHINA";
+    }
+    25% {
+        content: "EGYPT";
+    }
+    50% {
+        content: "DUBAI";
+    }
+    75% {
+        content: "PETRA";
+    }
+    100% {
+        content: "INDIA";
+    }
+}
+
+
+@media (max-width: 991px) {
+
+}
+
+@media (max-width: 575px) {
+
+    #logoimage {
+        width: 30px; /* Adjust logo size for smaller screens */
+    }
+
+    .navbar-brand {
+        font-size: 25px; /* Adjust navbar brand font size */
+    }
+
+    #hero h1 {
+        font-size: 20px; /* Adjust hero heading font size */
+    }
+
+    #hero h2 {
+        font-size: 16px; /* Adjust hero subheading font size */
+    }
+
+    #hero button {
+        width: 120px; /* Adjust button width for smaller screens */
+        font-size: 18px; /* Adjust button font size */
+    }
+}
+
+
